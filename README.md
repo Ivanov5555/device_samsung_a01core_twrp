@@ -1,1 +1,1 @@
-# device_samsung_a01core_twrp_11
+# device_samsung_a01core_twrp
