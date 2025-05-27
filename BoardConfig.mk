@@ -21,13 +21,6 @@ DEVICE_PATH := device/samsung/a01core
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# Bootloader
-BOARD_VENDOR := samsung
-TARGET_SOC := k39tv1_bsp_1g_titan
-TARGET_NO_BOOTLOADER := true
-TARGET_NO_RADIOIMAGE := true
-TARGET_BOOTLOADER_BOARD_NAME := mt6739
-
 BOARD_HAS_MTK_HARDWARE := true
 MTK_HARDWARE := true
 TARGET_ARCH := arm
