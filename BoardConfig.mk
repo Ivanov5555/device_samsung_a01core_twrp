@@ -15,24 +15,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 DEVICE_PATH := device/samsung/a01core
+TARGET_BUILD_64BIT := true
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-BOARD_HAS_MTK_HARDWARE := true
-MTK_HARDWARE := true
+# Bootloader
+BOARD_VENDOR := samsung
+TARGET_SOC := k39tv1_bsp_1g_titan
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+
+# Architecture
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_SMP := true
-TARGET_CPU_VARIANT := cortex-a7
-ARCH_ARM_HAVE_NEON := true
-ARCH_ARM_HAVE_VFP := true
-ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_VARIANT_RUNTIME := cortex-a53
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
+
 TARGET_BOARD_PLATFORM := mt6739
+TARGET_USES_64_BIT_BINDER := true
+
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Filesystems and Partitions
 BOARD_HAS_LARGE_FILESYSTEM := true
