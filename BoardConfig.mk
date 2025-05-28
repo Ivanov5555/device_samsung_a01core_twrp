@@ -16,7 +16,6 @@
 # limitations under the License.
 #
 DEVICE_PATH := device/samsung/a01core
-TARGET_BUILD_64BIT := true
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -145,4 +144,5 @@ TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 TW_INCLUDE_NTFS_3G := true
 TW_DEFAULT_LANGUAGE := ru
-TW_NO_FASTBOOT_BOOT := true
+TW_NO_LEGACY_PROPS := true
+TW_NO_BIND_SYSTEM := true
