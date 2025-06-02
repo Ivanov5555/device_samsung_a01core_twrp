@@ -17,6 +17,8 @@
 #
 DEVICE_PATH := device/samsung/a01core
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
