@@ -138,4 +138,7 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_DEVICE_VERSION := Matrosov,inc.
 # TW_CUSTOM_THEME := device/samsung/a01core/twres
+
+# LZMA Compression
+LZMA_COMPRESSION := -9
 LZMA_RAMDISK_TARGETS := recovery
